@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUUAR · Velas aromáticas de cera vegetal en vidrio</title>
+<meta name="description" content="LUUAR: velas aromáticas de cera vegetal, producto colombiano, en recipientes de vidrio que se quedan contigo. Elige diseño y aroma, y pide la tuya por WhatsApp.">
+<meta property="og:title" content="LUUAR · Luz de luna, hecha vela">
+<meta property="og:description" content="Velas aromáticas de cera vegetal en vidrio. Producto colombiano.">
+<meta property="og:image" content="img/ambiente-hero.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 54 54%22%3E%3Cpath d=%22M36 6a22 22 0 1 0 12 40A24 24 0 0 1 36 6z%22 fill=%22none%22 stroke=%22%23C5A469%22 stroke-width=%223%22/%3E%3C/svg%3E">
+<meta name="theme-color" content="#1E1C1B">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--luna:#FBF8F3;--crema:#F3ECE2;--arena:#D8C9B4;--dorado:#C5A469;--brasa:#B07A5B;--humo:#6B6764;--noche:#2B2928;--tinta:#1E1C1B;--wa:#25D366;
+  --serif:'Cormorant Garamond',Georgia,serif;--sans:'Jost',Arial,sans-serif;--ease:cubic-bezier(.2,.7,.2,1)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);font-weight:300;color:var(--noche);background:var(--luna);line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+.wrap{width:min(1280px,calc(100% - 48px));margin:0 auto}
+/* grano */
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.07;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
+.cap{font-size:11px;letter-spacing:.32em;text-transform:uppercase;font-weight:400}
+.gold{color:var(--brasa)}.dk .gold,.hero .gold,.end .gold,footer .gold{color:var(--dorado)}
+.serif{font-family:var(--serif);font-weight:300}
+h1,h2,h3{font-family:var(--serif);font-weight:300;letter-spacing:-.015em;line-height:1}
+h2{font-size:clamp(40px,5.2vw,76px)}
+em{font-style:italic;color:var(--brasa)}
+.dk em{color:var(--dorado)}
+.sym{display:inline-block;width:20px;height:20px;vertical-align:middle}
+.sym svg,.seal svg,.ph svg{width:100%;height:100%;display:block}
+
+/* botones */
+.btn{position:relative;display:inline-flex;align-items:center;gap:12px;padding:17px 30px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:400;overflow:hidden;transition:color .4s var(--ease)}
+.btn span,.btn svg{position:relative;z-index:1}
+.btn::before{content:"";position:absolute;inset:0;transform:translateY(101%);transition:transform .5s var(--ease)}
+.btn:hover::before{transform:none}
+.btn svg{width:17px;height:17px;fill:currentColor}
+.btn-wa{background:var(--wa);color:var(--tinta)}.btn-wa:hover{color:#fff}.btn-wa::before{background:var(--tinta)}
+.btn-ln{border:1px solid currentColor}.btn-ln::before{background:var(--luna)}.btn-ln:hover{color:var(--tinta)}
+.btn-dk{background:var(--tinta);color:var(--luna)}.btn-dk::before{background:var(--brasa)}
+.lnk{display:inline-flex;align-items:center;gap:10px;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;font-weight:400;padding-bottom:6px;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;transition:background-size .5s var(--ease)}
+.lnk:hover{background-size:30% 1px}
+.lnk svg{width:15px;height:15px;fill:var(--wa)}
+
+/* header */
+header{position:fixed;inset:0 0 auto;z-index:50;color:var(--luna);transition:background .4s,color .4s,box-shadow .4s}
+header.solid{background:rgba(251,248,243,.94);backdrop-filter:blur(12px);color:var(--noche);box-shadow:0 1px 0 var(--arena)}
+header .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:84px}
+header nav{display:flex;gap:34px}
+header nav a{font-size:11px;letter-spacing:.26em;text-transform:uppercase;font-weight:400;opacity:.9}
+header nav a:hover{opacity:1;color:var(--dorado)}
+.logo{display:flex;flex-direction:column;align-items:center;gap:6px}
+.logo .sym{width:18px;height:18px}
+.logo b{font-family:var(--serif);font-weight:400;font-size:24px;letter-spacing:.44em;padding-left:.44em;line-height:1}
+header .r{justify-self:end}
+header .btn{padding:12px 20px;font-size:10.5px}
+
+/* hero */
+.hero{position:relative;display:flex;min-height:min(100vh,980px);color:var(--luna);overflow:hidden;background:var(--tinta)}
+.hero .bg{position:absolute;inset:-4%;background:url(img/ambiente-hero.jpg) 62% 50%/cover;animation:kb 18s var(--ease) forwards}
+@keyframes kb{from{transform:scale(1.08)}to{transform:scale(1)}}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(20,17,15,.82) 0%,rgba(20,17,15,.45) 45%,rgba(20,17,15,.05) 75%),linear-gradient(0deg,rgba(20,17,15,.6),transparent 40%)}
+.hero .in{position:relative;z-index:2;display:flex;flex-direction:column;justify-content:flex-end;padding:170px 0 110px}
+.hero h1{font-size:clamp(56px,7.2vw,112px);max-width:12ch;line-height:.95}
+.hero em{color:var(--dorado)}
+.hero .cap{font-size:11px;margin:0}
+.up{animation:up 1.3s var(--ease) both}.u1{animation-delay:.15s}.u2{animation-delay:.3s}.u3{animation-delay:.45s}
+@keyframes up{from{opacity:0;transform:translateY(30px)}}
+.hero p:not(.cap){max-width:44ch;font-size:17px;color:#e6ddd1;margin:28px 0 40px}
+.hero .ctas{display:flex;gap:18px;flex-wrap:wrap;align-items:center}
+.hero .seal{position:absolute;right:max(24px,calc((100% - 1280px)/2));bottom:110px;width:150px;height:150px;z-index:2;animation:spin 40s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+.hero .scroll{position:absolute;left:50%;bottom:28px;z-index:2;transform:translateX(-50%);width:1px;height:56px;background:rgba(251,248,243,.35);overflow:hidden}
+.hero .scroll::after{content:"";position:absolute;left:0;top:-50%;width:1px;height:50%;background:var(--dorado);animation:drop 2.2s var(--ease) infinite}
+@keyframes drop{to{top:100%}}
+
+/* marquee */
+.mq{background:var(--crema);border-bottom:1px solid var(--arena);overflow:hidden;white-space:nowrap;padding:20px 0}
+.mq div{display:inline-flex;gap:48px;align-items:center;animation:mq 38s linear infinite;padding-right:48px}
+.mq span{font-family:var(--serif);font-style:italic;font-size:26px;color:var(--noche)}
+.mq i{display:inline-block;width:16px;height:16px}
+@keyframes mq{to{transform:translateX(-100%)}}
+
+/* intro */
+.intro{padding:150px 0 130px}
+.intro .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:96px;align-items:center}
+.intro .txt h2{max-width:9ch}
+.intro .txt p:not(.cap){font-size:17px;color:var(--humo);max-width:46ch;margin-top:30px}
+.intro .stats{display:flex;gap:56px;margin-top:56px;padding-top:32px;border-top:1px solid var(--arena)}
+.intro .stats b{display:block;font-family:var(--serif);font-weight:300;font-size:58px;line-height:1;color:var(--noche)}
+.intro .stats span{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--humo)}
+.frame{position:relative}
+.frame .img{aspect-ratio:4/5;overflow:hidden}
+.frame .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.frame:hover .img img{transform:scale(1.04)}
+.frame::before{content:"";position:absolute;inset:-22px 22px 22px -22px;border:1px solid var(--dorado);z-index:-1}
+.frame .tagc{position:absolute;left:-40px;bottom:48px;background:var(--luna);padding:18px 22px;box-shadow:0 20px 50px rgba(43,41,40,.12)}
+.frame .tagc .serif{font-size:24px;line-height:1.1}
+
+/* colección */
+.col{padding:40px 0 150px}
+.col .head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:72px}
+.col .head p:not(.cap){max-width:40ch;color:var(--humo)}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:44px 28px}
+.card{position:relative}
+.card:focus-within .ov{transform:none}
+@media (hover:none){.card .ov{transform:none;padding:12px;background:linear-gradient(transparent,rgba(20,17,15,.55))}}
+.card.big{grid-column:span 2;grid-row:span 2}
+.card .img{position:relative;aspect-ratio:4/5;overflow:hidden;background:#8b6447}
+.card .img img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s var(--ease),filter 1.2s}
+.card:hover .img img{transform:scale(1.06)}
+.card .no{position:absolute;top:16px;left:18px;color:var(--luna);font-size:10.5px;letter-spacing:.3em;z-index:2}
+.card .ov{position:absolute;inset:auto 0 0;padding:20px;background:linear-gradient(transparent,rgba(20,17,15,.75));transform:translateY(100%);transition:transform .6s var(--ease);display:flex;justify-content:center}
+.card:hover .ov{transform:none}
+.card .ov .btn{padding:13px 20px;font-size:10px}
+.card .meta{display:flex;justify-content:space-between;align-items:baseline;margin-top:20px;gap:10px}
+.card h3{font-size:30px;font-weight:400}
+.card.big h3{font-size:44px}
+.card .sz{font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brasa)}
+.card .d{font-size:14px;color:var(--humo);margin-top:4px}
+.dots{display:flex;gap:7px;margin-top:12px}
+.dots i{width:13px;height:13px;border-radius:50%;box-shadow:inset 0 0 0 1px rgba(43,41,40,.18)}
+
+/* ritual */
+.rit{position:relative;color:var(--luna);padding:150px 0;overflow:hidden;background:var(--tinta)}
+.rit .bg{position:absolute;inset:0;background:url(img/ambiente-mesa.jpg) center 70%/cover;opacity:.24}
+.rit .wrap{position:relative}
+.rit .top{text-align:center;max-width:760px;margin:0 auto 90px}
+.rit .top p:not(.cap){color:#cfc5b9;margin-top:24px;font-size:17px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid rgba(216,201,180,.25)}
+.step{padding:44px 40px 0;border-right:1px solid rgba(216,201,180,.25)}
+.step:last-child{border-right:0}
+.step .ph{width:44px;height:44px;margin-bottom:28px}
+.step h3{font-size:34px;margin-bottom:12px}
+.step p{color:#cfc5b9;font-size:15px}
+.step .n{font-size:11px;letter-spacing:.3em;color:var(--dorado);margin-bottom:16px}
+
+/* aromas */
+.aro{padding:150px 0;background:var(--crema)}
+.aro .wrap{display:grid;grid-template-columns:.85fr 2fr;gap:80px}
+.aro .side{position:sticky;top:120px;align-self:start}
+.aro .side p:not(.cap){color:var(--humo);margin:24px 0 36px;max-width:36ch}
+.legend{display:flex;gap:16px;align-items:center;margin-top:28px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--humo)}
+.legend i{width:14px;height:14px;display:inline-block}
+.fams{display:grid;grid-template-columns:1fr 1fr;gap:56px 64px}
+.fam h3{font-size:38px;display:flex;justify-content:space-between;align-items:baseline;padding-bottom:16px;border-bottom:1px solid var(--noche);margin-bottom:8px}
+.fam h3 small{font-family:var(--sans);font-size:10.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--brasa)}
+.fam ul{list-style:none}
+.fam li{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid var(--arena);font-size:16px;transition:padding .4s var(--ease),color .3s}
+.fam li:hover{padding-left:10px;color:var(--brasa)}
+.fam li i{width:13px;height:13px;display:inline-block}
+
+/* regalo */
+.reg{padding:150px 0}
+.reg .wrap{display:grid;grid-template-columns:1.25fr 1fr;gap:88px;align-items:center}
+.reg .img{aspect-ratio:16/11;overflow:hidden}
+.reg .img img{width:100%;height:100%;object-fit:cover}
+.reg ul{list-style:none;margin:32px 0 44px;border-top:1px solid var(--arena)}
+.reg li{display:flex;gap:18px;padding:16px 0;border-bottom:1px solid var(--arena);color:var(--humo)}
+.reg li b{font-family:var(--serif);font-weight:400;font-size:20px;color:var(--noche);min-width:150px}
+
+/* faq */
+.faq{padding:0 0 150px}
+.faq .wrap{display:grid;grid-template-columns:.85fr 2fr;gap:80px}
+details{border-bottom:1px solid var(--arena);padding:26px 0}
+details:first-of-type{border-top:1px solid var(--arena)}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;font-family:var(--serif);font-size:26px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";font-family:var(--sans);font-weight:300;font-size:26px;color:var(--dorado);transition:transform .4s var(--ease)}
+details[open] summary::after{transform:rotate(45deg)}
+details p{color:var(--humo);margin-top:14px;max-width:62ch}
+
+/* cierre */
+.end{position:relative;color:var(--luna);text-align:center;padding:180px 0;overflow:hidden;background:var(--tinta)}
+.end .bg{position:absolute;inset:0;background:url(img/ambiente-noche.jpg) center/cover;opacity:.45}
+.end .wrap{position:relative}
+.end h2{font-size:clamp(48px,7vw,104px)}
+.end p{color:#e0d6ca;margin:26px auto 44px;max-width:44ch}
+
+footer{background:var(--tinta);color:#b9b0a6;padding:96px 0 40px;border-top:1px solid #34302d}
+footer .top{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:48px}
+footer .logo{align-items:flex-start;color:var(--luna)}
+footer .logo b{padding-left:0}
+footer h4{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--dorado);font-weight:400;margin-bottom:18px}
+footer ul{list-style:none;font-size:15px;line-height:2.1}
+footer a:hover{color:var(--luna)}
+footer .bot{margin-top:80px;padding-top:24px;border-top:1px solid #34302d;display:flex;justify-content:space-between;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:#a39a91}
+
+.fab{position:fixed;right:22px;bottom:22px;z-index:60;width:60px;height:60px;border-radius:50%;background:var(--wa);display:flex;align-items:center;justify-content:center;box-shadow:0 12px 30px rgba(0,0,0,.25);transform:scale(0);transition:transform .5s var(--ease)}
+.fab.on{transform:scale(1)}
+.fab svg{width:28px;height:28px;fill:#fff}
+
+/* aparición */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1.1s var(--ease),transform 1.1s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.1s}.d2{transition-delay:.2s}.d3{transition-delay:.3s}
+
+@media (max-width:1020px){
+  header nav{display:none}
+  header .wrap{grid-template-columns:auto 1fr auto}
+  header .r{grid-column:3}
+  .logo{grid-column:1;align-items:flex-start}.logo b{padding-left:0}
+  .intro .wrap,.reg .wrap,.aro .wrap,.faq .wrap{grid-template-columns:1fr;gap:56px}
+  .aro .side{position:static}
+  .grid{grid-template-columns:1fr 1fr}
+  .card.big{grid-column:span 2;grid-row:auto}
+  .steps{grid-template-columns:1fr}
+  .step{border-right:0;border-bottom:1px solid rgba(216,201,180,.25);padding:36px 0}
+  footer .top{grid-template-columns:1fr 1fr}
+}
+@media (max-width:640px){
+  .wrap{width:calc(100% - 32px)}
+  header .wrap{height:70px}
+  header .btn span{display:none}header .btn{padding:12px}
+  .hero{min-height:100svh}
+  .hero .in{padding:120px 0 90px}
+  .hero .bg{background-position:68% 50%}
+  .hero::after{background:linear-gradient(0deg,rgba(20,17,15,.9) 0%,rgba(20,17,15,.55) 50%,rgba(20,17,15,.2) 100%)}
+  .hero h1{font-size:46px;max-width:none}
+  .hero p:not(.cap){font-size:16px;margin:20px 0 30px}
+  .hero .bg{background-image:url(img/ambiente-noche.jpg);background-position:50% 15%}
+  .hero .seal{width:96px;height:96px;top:96px;bottom:auto;right:16px}
+  .mq span{font-size:21px}
+  .intro,.col,.aro,.reg,.rit{padding-top:90px;padding-bottom:90px}
+  .col{padding-top:10px}
+  .intro .stats{gap:28px}.intro .stats b{font-size:44px}
+  .frame::before{inset:-12px 12px 12px -12px}
+  .frame .tagc{left:-8px;bottom:20px;padding:14px 16px}
+  .col .head{flex-direction:column;align-items:flex-start;margin-bottom:44px}
+  .grid{gap:36px 14px}
+  .card h3{font-size:24px}.card.big h3{font-size:34px}
+  .card .meta{flex-direction:column;gap:2px}
+  .card .ov{transform:none;padding:12px;background:linear-gradient(transparent,rgba(20,17,15,.55))}
+  .card .ov .btn{padding:10px 14px;font-size:9px;letter-spacing:.16em}
+  .card .ov .btn span{display:none}
+  .fams{grid-template-columns:1fr;gap:44px}
+  .reg li{flex-direction:column;gap:2px}
+  summary{font-size:22px}
+  .end{padding:120px 0}
+  footer .top{grid-template-columns:1fr}
+  footer .bot{flex-direction:column;gap:10px}
+}
+html.static *{animation:none!important;transition:none!important}html.static .rv{opacity:1;transform:none}html.static .hero{min-height:860px!important}@media (max-width:640px){html.static .hero{min-height:780px!important}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header id="hd"><div class="wrap">
+  <nav><a href="#coleccion">Colección</a><a href="#ritual">Ritual</a><a href="#aromas">Aromas</a></nav>
+  <a class="logo" href="#top" aria-label="LUUAR, inicio"><i class="sym" data-sym></i><b>LUUAR</b></a>
+  <div class="r"><a class="btn btn-wa" href="#" aria-label="Escríbenos por WhatsApp" data-wa="Hola LUUAR, quiero información sobre sus velas."><i class="ico"></i><span>Escríbenos</span></a></div>
+</div></header>
+
+<section class="hero" id="top">
+  <div class="bg" role="img" aria-hidden="true"></div>
+  <div class="wrap in">
+    <p class="cap gold up">Cera vegetal · Producto colombiano</p>
+    <h1 class="up u1">Luz que se <em>siente</em>, aroma que se queda.</h1>
+    <p class="up u2">Velas de cera vegetal, libres de tóxicos, en recipientes de vidrio que se quedan en tu casa cuando la cera termina. Elige el diseño, elige el aroma y pide la tuya por WhatsApp.</p>
+    <div class="ctas up u3">
+      <a class="btn btn-wa" href="#" data-wa="Hola LUUAR, quiero pedir una vela."><i class="ico"></i><span>Pedir por WhatsApp</span></a>
+      <a class="btn btn-ln" href="#coleccion"><span>Ver la colección</span></a>
+    </div>
+  </div>
+  <div class="seal" data-seal="#C5A469"></div>
+  <div class="scroll"></div>
+</section>
+
+<div class="mq" aria-hidden="true"><div id="mq"></div></div>
+
+<section class="intro"><div class="wrap">
+  <div class="txt">
+    <p class="cap gold rv">La marca</p>
+    <h2 class="rv d1" style="margin-top:18px">La luz que <em>se queda</em>.</h2>
+    <p class="rv d2">LUUAR viene de <i>luar</i>, la luz de la luna: suave, que no deslumbra y que acompaña. Así pensamos cada vela. Un objeto tan bonito apagado como encendido, para ese momento del día en que la casa se queda en silencio.</p>
+    <div class="stats rv d3"><div><b>21</b><span>Aromas</span></div><div><b>100%</b><span>Cera vegetal</span></div><div><b>0</b><span>Tóxicos</span></div></div>
+  </div>
+  <div class="frame rv d2">
+    <div class="img"><img src="img/ambiente-noche.jpg" alt="" loading="lazy"></div>
+    <div class="tagc"><div class="cap" style="font-size:9.5px;color:var(--brasa)">Luz de luna, hecha vela</div><div class="serif">Para las noches<br>que quieres que duren.</div></div>
+  </div>
+</div></section>
+
+<section class="col" id="coleccion"><div class="wrap">
+  <div class="head">
+    <div><p class="cap gold rv">La colección</p><h2 class="rv d1" style="margin-top:18px">Seis diseños,<br>un mismo <em>cuidado</em>.</h2></div>
+    <p class="rv d2">Vidrio tallado, acanalado o en panal. Cuando la vela termina, el recipiente se queda contigo: como joyero, florero o lo que imagines.</p>
+  </div>
+  <div class="grid" id="grid"></div>
+</div></section>
+
+<section class="rit dk" id="ritual"><div class="bg"></div><div class="wrap">
+  <div class="top"><p class="cap gold rv">Cómo pedir</p><h2 class="rv d1" style="margin-top:18px">Un ritual de <em>tres pasos</em>.</h2><p class="rv d2">Sin carritos ni formularios. Hablas con una persona que te ayuda a elegir.</p></div>
+  <div class="steps">
+    <div class="step rv"><div class="ph" data-phase=".12"></div><div class="n">01</div><h3>Elige tu vela</h3><p>Seis diseños en vidrio, en cristal, ámbar o gris, de mini a grande.</p></div>
+    <div class="step rv d1"><div class="ph" data-phase=".3"></div><div class="n">02</div><h3>Elige el aroma</h3><p>Veintiún aromas entre amaderados, dulces, florales y frescos. Si dudas, te recomendamos.</p></div>
+    <div class="step rv d2"><div class="ph" data-phase=".5"></div><div class="n">03</div><h3>Escríbenos</h3><p>Por WhatsApp te confirmamos precio, forma de pago, envío y fecha de entrega.</p></div>
+  </div>
+  <div style="text-align:center;margin-top:80px" class="rv"><a class="btn btn-wa" href="#" data-wa="Hola LUUAR, quiero empezar mi pedido."><i class="ico"></i><span>Empezar mi pedido</span></a></div>
+</div></section>
+
+<section class="aro" id="aromas"><div class="wrap">
+  <div class="side">
+    <p class="cap gold rv">Los aromas</p>
+    <h2 class="rv d1" style="margin-top:18px">Veintiún formas de llenar la <em>casa</em>.</h2>
+    <p class="rv d2">Cuéntanos para qué espacio es y te ayudamos a elegir el aroma y el diseño.</p>
+    <a class="btn btn-dk rv d3" href="#" data-wa="Hola LUUAR, quiero que me recomienden un aroma."><span>Pedir una recomendación</span></a>
+    
+  </div>
+  <div class="fams" id="fams"></div>
+</div></section>
+
+<section class="reg" id="regalos"><div class="wrap">
+  <div class="img rv"><img src="img/empaque.jpg" alt="Empaque de regalo LUUAR: caja negra, tarjeta y etiquetas" loading="lazy"></div>
+  <div>
+    <p class="cap gold rv">Para regalar</p>
+    <h2 class="rv d1" style="margin-top:18px">Un regalo que se enciende <em>despacio</em>.</h2>
+    <ul class="rv d2">
+      <li><b>Para alguien especial</b>Cuéntanos para quién es y te ayudamos a elegir diseño y aroma.</li>
+      <li><b>Varias velas</b>Si necesitas más de una, pregúntanos por disponibilidad.</li>
+      <li><b>Empaque</b>Pregúntanos por las opciones de presentación para regalo.</li>
+    </ul>
+    <a class="btn btn-wa rv d3" href="#" data-wa="Hola LUUAR, quiero armar un regalo."><i class="ico"></i><span>Armar un regalo</span></a>
+  </div>
+</div></section>
+
+<section class="faq"><div class="wrap">
+  <div><p class="cap gold rv">Preguntas</p><h2 class="rv d1" style="margin-top:18px;font-size:clamp(40px,4.4vw,60px)">Lo que nos <em>preguntan</em>.</h2></div>
+  <div class="rv d2">
+    <details><summary>¿Cómo hago mi pedido?</summary><p>Escríbenos por WhatsApp con el diseño y el aroma que te gustan. Te confirmamos precio, forma de pago y entrega en el chat.</p></details>
+    <details><summary>¿Hacen envíos?</summary><p>Escríbenos con tu ciudad y te contamos las opciones de entrega y su costo.</p></details>
+    <details><summary>¿Puedo elegir cualquier aroma para cualquier diseño?</summary><p>Escríbenos con el diseño y el aroma que te gustan y te confirmamos la disponibilidad.</p></details>
+    <details><summary>¿Qué hago con el vidrio cuando termine la vela?</summary><p>Lávalo con agua tibia y úsalo como joyero, florero o recipiente decorativo. El cristal es tuyo.</p></details>
+    <details><summary>¿Cómo cuido mi vela?</summary><p>La primera vez, déjala encendida hasta que la cera se derrita de borde a borde. Recorta la mecha a 5 mm antes de cada uso, apágala con la tapa y nunca la dejes encendida sin supervisión.</p></details>
+  </div>
+</div></section>
+
+<section class="end dk"><div class="bg"></div><div class="wrap">
+  <i class="sym rv" data-sym style="width:34px;height:34px"></i>
+  <h2 class="rv d1" style="margin-top:26px">Enciende la noche <em>despacio</em>.</h2>
+  <p class="rv d2">Tu próxima vela está a un mensaje de distancia.</p>
+  <a class="btn btn-wa rv d3" href="#" data-wa="Hola LUUAR, quiero pedir una vela."><i class="ico"></i><span>Pedir por WhatsApp</span></a>
+</div></section>
+
+<footer><div class="wrap">
+  <div class="top">
+    <div><a class="logo" href="#top"><i class="sym" data-sym></i><b>LUUAR</b></a><p class="cap gold" style="margin-top:18px;font-size:9.5px">Luz de luna, hecha vela</p></div>
+    <div><h4>Explora</h4><ul><li><a href="#coleccion">Colección</a></li><li><a href="#aromas">Aromas</a></li><li><a href="#regalos">Regalos</a></li></ul></div>
+    <div><h4>Contacto</h4><ul><li><a href="#" data-wa="Hola LUUAR.">WhatsApp</a></li><li>Producto colombiano</li></ul></div>
+    <div id="redes" hidden><h4>Síguenos</h4><ul><li><a href="#" id="ig">Instagram</a></li><li><a href="#" id="tt">TikTok</a></li></ul></div>
+  </div>
+  <div class="bot"><span>© 2026 LUUAR</span><span>Cera vegetal · Producto colombiano</span></div>
+</div></footer>
+
+<a class="fab" id="fab" href="#" data-wa="Hola LUUAR, quiero pedir una vela." aria-label="Escribir por WhatsApp"><i class="ico"></i></a>
+
+<script>if(navigator.webdriver)document.documentElement.classList.add("static");</script>
+<script src="luuar.js"></script>
+<script>
+/* === Datos que se cambian aquí === */
+var WHATSAPP = "573007652947";          // número con indicativo, sin + ni espacios
+var INSTAGRAM = "#", TIKTOK = "#";      // enlaces a los perfiles
+
+var VELAS = [
+  {n:"Crystal", sz:"Grande", d:"Tallado en diamante", img:"crystal.png", colores:["#8f8c88","#c99a5b","#e8e4dc"], big:true},
+  {n:"Charlot", sz:"Mediana", d:"Tallado en diamante", img:"charlot.png", colores:["#c99a5b","#e8e4dc"]},
+  {n:"Penelope", sz:"", d:"Textura panal, tapa bombé", img:"penelope.png", colores:["#e8e4dc"]},
+  {n:"Mini Reina", sz:"Mini", d:"Tallado en diamante", img:"mini-reina.png", pos:"22% 50%", colores:["#e8e4dc"]},
+  {n:"Carpita", sz:"", d:"Vidrio acanalado, tapa cónica", img:"carpita.png", colores:["#c99a5b"]},
+  {n:"Circo", sz:"", d:"Tapa tipo carpa, cuerpo acanalado", img:"circo.png", colores:[]}
+];
+var AROMAS = {
+  "Amaderados":{t:"Cálidos",l:[["Cedarwood",.38],["Ancient cedarwood",.5],["Twilight woods",.38],["Leather",.5],["Whiskey",.5],["Ron",.38]]},
+  "Dulces":{t:"Envolventes",l:[["French vanilla",.25],["Cookies and cream",.38],["Apple cinnamon",.38],["Banana nuts",.25],["Cherry merlot",.38],["Fall otoño",.38]]},
+  "Florales":{t:"Suaves",l:[["Red roses",.25],["Sparkling rose",.25],["Japanese cherry blossom",.12],["Loto azul",.12],["Angel wings",.25]]},
+  "Frescos":{t:"Ligeros",l:[["Citronella",.25],["Verbena",.12],["Coco lemonade",.12],["Hawaiian blast",.25]]}
+};
+
+var ICO='<svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 12 12 0 0 0 4.6 4c1.7.7 2.3.8 3.1.7a2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .1-1.2c0-.2-.2-.2-.4-.3z"/></svg>';
+
+document.getElementById("grid").innerHTML=VELAS.map(function(v,i){
+  return '<article class="card rv'+(v.big?' big':'')+(i%2?' d1':'')+'"><div class="img"><span class="no">Nº 0'+(i+1)+'</span><img src="img/'+v.img+'"'+(v.pos?' style="object-position:'+v.pos+'"':'')+' alt="Vela '+v.n+' LUUAR" loading="lazy">'+
+  '<div class="ov"><a class="btn btn-wa" href="#" aria-label="Pedir '+v.n+' por WhatsApp" data-wa="Hola LUUAR, quiero la vela '+v.n+'.">'+'<i class="ico"></i><span>Pedir '+v.n+'</span></a></div></div>'+
+  '<div class="meta"><h3>'+v.n+'</h3>'+(v.sz?'<span class="sz">'+v.sz+'</span>':'')+'</div><p class="d">'+v.d+'</p>'+
+  '<div class="dots">'+v.colores.map(function(c){return '<i style="background:'+c+'"></i>';}).join("")+'</div></article>';}).join("");
+document.getElementById("fams").innerHTML=Object.keys(AROMAS).map(function(k,i){var f=AROMAS[k];
+  return '<div class="fam rv'+(i%2?' d1':'')+'"><h3>'+k+'<small>'+f.t+'</small></h3><ul>'+f.l.map(function(a){return '<li><span>'+a[0]+'</span></li>';}).join("")+'</ul></div>';}).join("");
+var words=["Cera vegetal","Producto colombiano","Libre de tóxicos","Veintiún aromas","El vidrio se queda contigo","Pide por WhatsApp"];
+var m="";for(var r=0;r<2;r++)words.forEach(function(w){m+='<span>'+w+'</span><i class="sym" data-sym></i>';});
+document.getElementById("mq").innerHTML=m;
+document.getElementById("mq").insertAdjacentHTML("afterend",'<div>'+m+'</div>');
+
+/* símbolos, sello y fases */
+document.querySelectorAll("[data-sym]").forEach(function(e){e.innerHTML=LUUAR.sym(e.dataset.sym||"#C5A469");});
+document.querySelectorAll("[data-seal]").forEach(function(e){e.innerHTML=LUUAR.seal(e.dataset.seal);});
+document.querySelectorAll("[data-phase]").forEach(function(e){e.innerHTML=LUUAR.phase(+e.dataset.phase,e.dataset.c||"#C5A469");});
+document.querySelectorAll("i.ico").forEach(function(i){i.outerHTML=ICO;});
+document.querySelectorAll("[data-wa]").forEach(function(a){a.href="https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(a.dataset.wa);a.target="_blank";a.rel="noopener";});
+document.getElementById("ig").href=INSTAGRAM;document.getElementById("tt").href=TIKTOK;
+if(INSTAGRAM!=="#"||TIKTOK!=="#")document.getElementById("redes").hidden=false;
+
+/* header sólido, botón flotante y aparición al hacer scroll */
+var hd=document.getElementById("hd"),fab=document.getElementById("fab");
+function onS(){var y=window.scrollY;hd.classList.toggle("solid",y>60);fab.classList.toggle("on",y>window.innerHeight*.8);}
+window.addEventListener("scroll",onS,{passive:true});onS();
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target);}});},{threshold:.12,rootMargin:"0px 0px -40px 0px"});
+  document.querySelectorAll(".rv").forEach(function(e){io.observe(e);});}
+else document.querySelectorAll(".rv").forEach(function(e){e.classList.add("in");});
+if(/[?&]captura/.test(location.search)||navigator.webdriver)document.querySelectorAll(".rv").forEach(function(e){e.classList.add("in");});
+</script>
+</body>
+</html>
